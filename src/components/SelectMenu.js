@@ -1,10 +1,6 @@
 import React from 'react'
-import { withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom'
 
-const Menu = () => (
-    <div>
-        Menu
-    </div>
-)
+const Menu = () => <div>Menu</div>
 
 export default withRouter(Menu)

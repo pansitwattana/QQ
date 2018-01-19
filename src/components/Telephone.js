@@ -1,10 +1,6 @@
 import React from 'react'
-import { withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom'
 
-const Telephone = () => (
-    <div>
-        Your number
-    </div>
-)
+const Telephone = () => <div>Your number</div>
 
 export default withRouter(Telephone)
