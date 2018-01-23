@@ -11,7 +11,7 @@ import { Form, Input, Button } from 'antd';
 const Wrapper = styled.div`
   padding: 20px;
   margin: auto;
-  max-width: 400px;
+  max-width: 300px;
 `
 // const Input = styled.input`
 //   margin: 10px;
@@ -21,17 +21,41 @@ const Wrapper = styled.div`
 
 // `
 
+const styles = {
+  button: {
+    width: '100%',
+    backgroundColor: '#45b383',
+    fontSize: '10px',
+    color: '#fff',
+    fontWeight: 'bold',
+    height: '40px',
+    borderRadius: 2,
+    borderWidth: 0,
+  },
+  input: {
+    backgroundColor: '#E4E7EC',
+    padding: 24,
+    margin: 0,
+    borderWidth: 0,
+    borderRadius: 2,
+    color: '#888988',
+  }
+}
+
+
 const Login = () => (
   <Wrapper>
-    <Form style={{ display: 'flex', flexDirection: 'column' }}>
+    <Form>
       <Form.Item>
-        <Input placeholder="Username" />
+        <Input style={styles.input} placeholder="Username" />
       </Form.Item>
       <Form.Item>
-        <Input placeholder="Password" />
+        <Input style={styles.input} placeholder="Password" />
       </Form.Item>
-      <Form.Item>
-        <Button type="primary">Submit</Button>
+      <Form.Item
+        wrapperCol={{ span: 8, offset: 8 }}
+      >
+        <Button style={styles.button}>ลงชื่อเข้าใช้</Button>
       </Form.Item>
     </Form>
   </Wrapper>
